@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+      function guessInteger(){
+          guess = document.forms['guessForm']['guessValue'].value;
+          if(guess==''){
+              document.getElementById('demo').innerHTML = "Empty!";
+              return;
+          }else{
+              guess_int = parseInt(guess);
+              if(guess_int) == 20
+              {document.getElementById('demo').innterHTML = "Right!";}
+              else
+              {document.getElementById('demo').innterHTML = "Wrong!";}
+          return;
+      }
+      </script>
+  </head>
+  <body>
+    <form name='guessForm'>
+        <input name = "guessValue" class="inputField">
+        </form>
+    <button class='button' onclick="guessInteger()">Guess an Integer</button>
+    <div id='demo'></div>
+    </body>
+</html>
